@@ -3,6 +3,8 @@ import DateTime from './DateTime.js';
 import Weather from './Weather.js';
 import Notes from './Notes.js';
 import Bus  from './bus.js';
+import TodoList from './TodoList.js';
+import News from './News.js';
 function App() {
   return (
     <>
@@ -23,7 +25,7 @@ function App() {
         
         <h2 id = "temperature"> <Weather /> </h2>
     </header>
-    
+    <body>
     <section id="section1" className="container">
             <h2>Calendar</h2>
             <p>Content for section 1...</p>
@@ -38,12 +40,12 @@ function App() {
         </section>
         <section id="section3" className="container">
             <h2>TO-DO Lists</h2>
-            <p>Content for section 3...</p>
+            <><TodoList/></>
         </section>
 
-        <section id="section3" className="container">
+        <section id="section3" className="container2">
             <h2>News</h2>
-            <p>Content for section 3...</p>
+            <News />
         </section>
 
         <section id="iot" className="container">
@@ -66,7 +68,7 @@ function App() {
             <h2>Notes</h2>
             <Notes/>
         </section>
-              
+        </body> 
     
     </>
   );
