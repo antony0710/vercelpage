@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  box-sizing: border-box;
+  border: 10px solid #0fe42b;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Shadow effect */
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust this to change the spacing between the boxes */
+  align-items: start;
+}
+header {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+main {
+  background-color: #e9ecef;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+#savedNotes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust this to change the spacing between the boxes */
+  align-items: start;
+}
+
+.note {
+  display: inline-block;
+  margin: 10px; /* Add some margin around each box */
+  background-color: yellowgreen;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Shadow effect */
+  padding: 20px; /* Space around the content */
+}
+.note h3 {
+  margin: 0;
+}
+
+.note pre {
+  white-space: pre-wrap; /* Preserve spaces and line breaks */
+  word-wrap: break-word; /* Allow long words to be able to break and wrap onto the next line */
+}
+
+
+
+
+#date_time {
+  font-size: 14px; /* Increase the font size */
+  color: #333; /* Darken the text color */
+  margin: 0 auto; /* Center the element */
+  text-align: center; /* Align the text to the center */
+  font-family: 'Helvetica', 'Arial', sans-serif; /* Use a modern font */
+  padding: 10px; /* Add some space around the text */
+  background-color: #f9f9; /* Add a light background color */
+  border-radius: 5px; /* Round the corners */
+  max-width: 30%; /* Limit the width of the element */
+  display: block; /* Make the element a block element */
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+svg {
+	font-family: "Russo One", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #365FA0;
+	font-size: 100px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); }
+	80%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); stroke-width: 3; }
+	100% {
+		fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.wrapper {background-color: #FFFFFF};
