@@ -2,7 +2,7 @@ import './App.css';
 import DateTime from './DateTime.js';
 import Weather from './Weather.js';
 import Notes from './Notes.js';
-
+import Bus  from './bus.js';
 function App() {
   return (
     <>
@@ -18,12 +18,12 @@ function App() {
         <h1>My Personal Dashboard</h1>
         <h2> user name, and icon  </h2>
         <h2 id= "username"> Username</h2>
-        <div>
-            <h2 id = "date_time"> <DateTime /> </h2>
-        </div>
+        
+        <h2 id = "date_time"> <DateTime /> </h2>
+        
         <h2 id = "temperature"> <Weather /> </h2>
     </header>
-    <main>
+    
     <section id="section1" className="container">
             <h2>Calendar</h2>
             <p>Content for section 1...</p>
@@ -53,7 +53,7 @@ function App() {
         
         <section id="section3" className="container">
             <h2>Transportabtion</h2>
-            <p>Content for section 3...</p>
+            <Bus/>
         </section>
 
         <section id="section3" className="container">
@@ -62,11 +62,12 @@ function App() {
         </section>
 
    
-            <section id="notes" className="container">
-              <><Notes/></>
-                </section>
+        <section id="notes" className="container">
+            <h2>Notes</h2>
+            <Notes/>
+        </section>
               
-      </main>
+    
     </>
   );
 }

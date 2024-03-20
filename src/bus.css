@@ -1,0 +1,23 @@
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+  }
+  
+  .select-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+  }
+  
+  .select-container {
+    margin-bottom: 20px;
+  }
+  
+  .eta-container {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 20px;
+  }

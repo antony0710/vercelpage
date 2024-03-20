@@ -43,7 +43,6 @@ const Notes = () => {
 
     return (
         <div>
-            <h2>Notes</h2>
             {notes.map((note, index) => (
                 <div key={index} className='note'>
                     <h3>{note.Title}</h3>
