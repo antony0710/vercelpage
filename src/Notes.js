@@ -4,8 +4,8 @@ const Notes = () => {
     const [notes, setNotes] = useState([]);
     const [title, setTitle] = useState('');
     const [content, setContent] = useState('');
-    // const server = 'https://antonyazurenode.azurewebsites.net/';
-    const server = 'http://localhost:5000';
+    const server = 'https://antonyazurenode.azurewebsites.net/';
+    // const server = 'http://localhost:5000';
     const fetchNotes = () => {
         fetch(server+'/getNotes')
             .then(response => response.json())
